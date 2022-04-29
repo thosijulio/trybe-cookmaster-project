@@ -32,7 +32,7 @@ Através dessa aplicação, é possível realizar as operações básicas que se
 
 ---
 
-# Instruções para rodar o projeto
+## Instruções para rodar o projeto
 
 1. Clone o repositório
 
