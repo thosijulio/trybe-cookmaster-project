@@ -20,7 +20,7 @@ Neste projeto, desenvolvi as seguintes habilidades:
 
 - Fazer upload/download de arquivos em APIs REST;
 
-- Realização testes de integração 
+- Realização de testes de integração 
 
 ---
 
