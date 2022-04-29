@@ -95,7 +95,7 @@ Através dessa aplicação, é possível realizar as operações básicas que se
 
 ### Busca de receitas por ID (GET /recipes/(id))
 
-- Pesquisa de uma receita no banco que contém o id passado por parametro. Para pesquisar, coloque no header da requisição uma chave "Authorization" contendo o token recebido no endpoint de login.
+- Pesquisa de uma receita no banco que contém o id passado por parametro. Para pesquisar, coloque no header da requisição GET uma chave "Authorization" contendo o token recebido no endpoint de login.
 
 - Retorno da requisição: Um objeto contendo todas as informações da receita pesquisada.
 
@@ -108,6 +108,11 @@ Através dessa aplicação, é possível realizar as operações básicas que se
     "preparation": "colocar no forno"
 }
 - Retorno da requisição: Um objeto contendo todas as informações da receita atualizada.
+
+### Exclusão de receita (DELETE /recipes/(id))
+
+- Remove uma receita no banco que contém o id passado por parametro. Para remover, coloque no header da requisição DELETE uma chave "Authorization" contendo o token recebido no endpoint de login.
+- Retorno da requisição: retorna apenas um status 404(No Content).
 
 ---
 
