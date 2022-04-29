@@ -66,6 +66,7 @@ Através dessa aplicação, é possível realizar as operações básicas que se
     "password": "teste123@",
     "email": "thosijulio@gmail.com"
 }
+
 - Retorno da requisição: Um objeto com a chave user, que é um objeto que contém as informações do usuário registradas no banco (_id, name, email e role)
 
 ### Login de usuário (GET /users)
@@ -76,6 +77,7 @@ Através dessa aplicação, é possível realizar as operações básicas que se
     "password": "teste123@",
     "email": "thosijulio@gmail.com"
 }
+
 - Retorno da requisição: Um objeto com a chave token contendo o token necessário para utilizar a api.
 
 ### Criação de receitas (POST /recipes)
@@ -86,11 +88,13 @@ Através dessa aplicação, é possível realizar as operações básicas que se
     "ingredients": "Banana",
     "preparation": "colocar no forno"
 }
+
 - Retorno da requisição: Um objeto com a chave recipe, que é um objeto que contém as informações da receita criada no banco (userID, name, ingredients, preparation, _id)
 
 ### Busca de receitas (GET /recipes)
 
 - Pesquisa de todas as receitas dentro do banco de dados. Para pesquisar, coloque no header da requisição uma chave "Authorization" contendo o token recebido no endpoint de login.
+
 - Retorno da requisição: Um array contendo todas as receitas dentro do banco.
 
 ### Busca de receitas por ID (GET /recipes/(id))
@@ -107,11 +111,13 @@ Através dessa aplicação, é possível realizar as operações básicas que se
     "ingredients": "Banana",
     "preparation": "colocar no forno"
 }
+
 - Retorno da requisição: Um objeto contendo todas as informações da receita atualizada.
 
 ### Exclusão de receita (DELETE /recipes/(id))
 
 - Remove uma receita no banco que contém o id passado por parametro. Para remover, coloque no header da requisição DELETE uma chave "Authorization" contendo o token recebido no endpoint de login.
+
 - Retorno da requisição: retorna apenas um status 404(No Content).
 
 ---
