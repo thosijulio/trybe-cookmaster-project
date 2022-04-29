@@ -6,7 +6,7 @@
 
 Criação de uma API CRUD utilizando a arquitetura MSC!
 
-Projeto feito em NodeJS e Exprexx, em que é possível fazer o cadastro e login de pessoas usuárias, onde apenas essas pessoas poderão acessar, modificar e deletar as receitas que cadastrou.
+Projeto feito em NodeJS e Express, em que é possível fazer o cadastro e login de pessoas usuárias, onde apenas essas pessoas poderão acessar, modificar e deletar as receitas que cadastrou.
 
 ---
 
