@@ -56,6 +56,19 @@ Através dessa aplicação, é possível realizar as operações básicas que se
 
 ---
 
+## Utilização da API (Principais endpoints)
+
+### Criação de usuário (POST /users)
+
+- Criação de um usuário USER dentro do banco. Para inserir, coloque no corpo da requisição POST um JSON contendo as chaves user, password e email.
+- Exemplo: {
+    "name": "thosijulio",
+    "password": "teste123@",
+    "email": "thosijulio@gmail.com"
+}
+
+---
+
 ## Contato
 Caso surga alguma dúvida, comentário ou sugestão sobre o projeto, não hesite em me contactar:
 <p align=center>
