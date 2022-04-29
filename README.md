@@ -2,33 +2,20 @@
 
 ---
 
+## Sumário
+
+- [O que foi desenvolvido](#o-que-foi-desenvolvido)
+- [Instruções para rodar o projeto](#instruções-para-rodar-o-projeto)
+- [Desenvolvimento](#desenvolvimento)
+- [Habilidades](#habilidades)
+- [Principais endpoints](#principais-endpoints)
+- [Contato](#contato)
+
 ## O que foi desenvolvido
 
 Criação de uma API CRUD utilizando a arquitetura MSC!
 
 Projeto feito em NodeJS e Express, em que é possível fazer o cadastro e login de pessoas usuárias, onde apenas essas pessoas poderão acessar, modificar e deletar as receitas que cadastrou.
-
----
-
-## Habilidades
-
-Neste projeto, desenvolvi as seguintes habilidades:
-
-- Compreensão do funcionamento de um token de autenticação;
-
-- Autenticação de rotas do Express usando o token JWT;
-
-- Fazer upload/download de arquivos em APIs REST;
-
-- Realização de testes de integração 
-
----
-
-## Desenvolvimento
-
-Desenvolvi todas as camadas da aplicação (Models, Service e Controllers).
-
-Através dessa aplicação, é possível realizar as operações básicas que se pode fazer em um determinado banco de dados: Criação, Leitura, Atualização e Exclusão (CRUD).
 
 ---
 
@@ -56,7 +43,29 @@ Através dessa aplicação, é possível realizar as operações básicas que se
 
 ---
 
-## Utilização da API (Principais endpoints)
+## Desenvolvimento
+
+Desenvolvi todas as camadas da aplicação (Models, Service e Controllers).
+
+Através dessa aplicação, é possível realizar as operações básicas que se pode fazer em um determinado banco de dados: Criação, Leitura, Atualização e Exclusão (CRUD).
+
+---
+
+## Habilidades
+
+Neste projeto, desenvolvi as seguintes habilidades:
+
+- Compreensão do funcionamento de um token de autenticação;
+
+- Autenticação de rotas do Express usando o token JWT;
+
+- Fazer upload/download de arquivos em APIs REST;
+
+- Realização de testes de integração 
+
+---
+
+## Principais endpoints
 
 ### Criação de usuário (POST /users)
 
