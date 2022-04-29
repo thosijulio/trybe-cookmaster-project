@@ -66,6 +66,48 @@ Através dessa aplicação, é possível realizar as operações básicas que se
     "password": "teste123@",
     "email": "thosijulio@gmail.com"
 }
+- Retorno da requisição: Um objeto com a chave user, que é um objeto que contém as informações do usuário registradas no banco (_id, name, email e role)
+
+### Login de usuário (GET /users)
+
+- Login de um usuário USER dentro do banco. Para inserir, coloque no corpo da requisição GET um JSON contendo as chaves user, password e email.
+- Exemplo: {
+    "name": "thosijulio",
+    "password": "teste123@",
+    "email": "thosijulio@gmail.com"
+}
+- Retorno da requisição: Um objeto com a chave token contendo o token necessário para utilizar a api.
+
+### Criação de receitas (POST /recipes)
+
+- Criação de uma receita dentro do banco. Para inserir, coloque no corpo da requisição POST um JSON contendo as chaves name, ingredients e preparation. Apenas um usuário já logado pode inserir uma receita. No header da requisição, crie uma chave "Authorization" contendo o token recebido no endpoint de login.
+- Exemplo: {
+    "name": "Torta de Banana",
+    "ingredients": "Banana",
+    "preparation": "colocar no forno"
+}
+- Retorno da requisição: Um objeto com a chave recipe, que é um objeto que contém as informações da receita criada no banco (userID, name, ingredients, preparation, _id)
+
+### Busca de receitas (GET /recipes)
+
+- Pesquisa de todas as receitas dentro do banco de dados. Para pesquisar, coloque no header da requisição uma chave "Authorization" contendo o token recebido no endpoint de login.
+- Retorno da requisição: Um array contendo todas as receitas dentro do banco.
+
+### Busca de receitas por ID (GET /recipes/(id))
+
+- Pesquisa de uma receita no banco que contém o id passado por parametro. Para pesquisar, coloque no header da requisição uma chave "Authorization" contendo o token recebido no endpoint de login.
+
+- Retorno da requisição: Um objeto contendo todas as informações da receita pesquisada.
+
+### Atualização de receita (PUT /recipes/(id))
+
+- Atualiza uma receita no banco que contém o id passado por parametro. Para atualizar, coloque no corpo da requisição PUT um JSON contendo as chaves name, ingredients e preparation. Coloque também no header da requisição uma chave "Authorization" contendo o token recebido no endpoint de login.
+- Exemplo: {
+    "name": "Torta de Banana",
+    "ingredients": "Banana",
+    "preparation": "colocar no forno"
+}
+- Retorno da requisição: Um objeto contendo todas as informações da receita atualizada.
 
 ---
 
